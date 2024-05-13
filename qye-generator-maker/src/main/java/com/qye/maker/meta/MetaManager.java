@@ -20,6 +20,7 @@ public class MetaManager {
         String metaJson = ResourceUtil.readUtf8Str("meta.json");
         Meta newMeta = JSONUtil.toBean(metaJson, Meta.class);
         //todo 校验配置文件，处理默认值
+        MetaValidator.doValidAndFill(newMeta);
         return newMeta;
     }
 

@@ -6,8 +6,9 @@
   "author": "qye",
   "createTime": "2024-5-11",
   "fileConfig": {
-    "inputRootPath": "D:/Code/Java Projects/qye-generator/qye-generator-demo-projects/acm-template-pro",
+    "inputRootPath":".source/acm-template-pro",
     "outputRootPath": "generated",
+    "sourceRootPath": "D:/Code/Java Projects/qye-generator/qye-generator-demo-projects/acm-template-pro",
     "type": "dir",
     "files": [
       {
