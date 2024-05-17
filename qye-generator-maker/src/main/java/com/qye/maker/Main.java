@@ -12,6 +12,5 @@ public class Main {
     public static void main(String[] args) throws TemplateException, IOException, InterruptedException {
         MainGenerator mainGenerator=new MainGenerator();
         mainGenerator.doGenerate();
-
     }
 }
