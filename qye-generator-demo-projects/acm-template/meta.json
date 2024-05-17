@@ -1,0 +1,24 @@
+{
+    "name": "acm-template-generator",
+    "description": "ACM 示例模版生成器",
+    "fileConfig": {
+        "sourceRootPath": "D:/Code/Java Projects/qye-generator/qye-generator-demo-projects/acm-template",
+        "files": [
+            {
+                "inputPath": "src/com/qye/acm/MainTemplate.java",
+                "outputPath": "src/com/qye/acm/MainTemplate.java.ftl",
+                "type": "file",
+                "generateType": "dynamic"
+            }
+        ]
+    },
+    "modelConfig": {
+        "models": [
+            {
+                "fieldName": "outputText",
+                "type": "String",
+                "defaultValue": "sum = "
+            }
+        ]
+    }
+}

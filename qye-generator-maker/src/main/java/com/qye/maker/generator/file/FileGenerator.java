@@ -1,6 +1,6 @@
 package com.qye.maker.generator.file;
 
-import com.qye.maker.model.DataModel;
+
 import freemarker.template.TemplateException;
 
 import java.io.File;
@@ -28,11 +28,5 @@ public class FileGenerator {
         String outputDynamicFilePath = outputPath  + File.separator + "acm-template/src/com/qye/acm/MainTemplate.java";
         DynamicFileGenerator.doGenerate(inputDynamicFilePath, outputDynamicFilePath, model);
     }
-    public static void main(String[] args) throws TemplateException, IOException {
-        DataModel dataModel = new DataModel();
-        dataModel.setAuthor("qye");
-        dataModel.setLoop(false);
-        dataModel.setOutputText("求和：");
-        doGenerate(dataModel);
-    }
+
 }

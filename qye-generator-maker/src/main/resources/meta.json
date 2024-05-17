@@ -19,7 +19,7 @@
       },
       {
         "groupKey": "git",
-        "groupName": "开原",
+        "groupName": "开源",
         "type": "group",
         "condition": "needGit",
         "files": [
