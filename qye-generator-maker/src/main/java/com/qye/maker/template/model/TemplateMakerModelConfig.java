@@ -19,7 +19,7 @@ public class TemplateMakerModelConfig {
 
     @NoArgsConstructor
     @Data
-    public static class ModelInfoConfig{
+    public static class ModelInfoConfig {
 
         private String fieldName;
 
@@ -35,11 +35,15 @@ public class TemplateMakerModelConfig {
     }
 
     @Data
-    public static class ModelGroupConfig{
+    public static class ModelGroupConfig {
         private String condition;
 
         private String groupKey;
 
         private String groupName;
+
+        private String type;
+
+        private String description;
     }
 }

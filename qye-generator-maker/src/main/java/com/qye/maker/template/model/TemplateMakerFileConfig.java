@@ -13,10 +13,6 @@ public class TemplateMakerFileConfig {
     private FileGroupConfig fileGroupConfig;
 
 
-    public void setFiles(List<FileInfoConfig> files) {
-        this.files = files;
-    }
-
     @NoArgsConstructor
     @Data
     public static class FileInfoConfig{

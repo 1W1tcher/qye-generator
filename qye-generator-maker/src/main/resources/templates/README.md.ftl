@@ -34,7 +34,7 @@ generator generate <#list modelConfig.models as modelInfo>-<#if modelInfo.abbr??
 
     默认值：${modelInfo.defaultValue?c}
 
-    缩写： -${modelInfo.abbr}
+    <#if modelInfo.abbr??>缩写： -${modelInfo.abbr}</#if>
 
 </#if>
 

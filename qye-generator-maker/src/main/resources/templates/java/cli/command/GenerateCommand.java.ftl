@@ -50,13 +50,13 @@ public class GenerateCommand implements Callable<Integer> {
         <#if modelInfo.condition??>
         if(${modelInfo.condition}){
             System.out.println("输入${modelInfo.groupName}配置:");
-            CommandLine commandLine = new CommandLine(${modelInfo.type}Command.class);
-            commandLine.execute(${modelInfo.allArgsStr});
+            CommandLine ${modelInfo.groupKey}commandLine = new CommandLine(${modelInfo.type}Command.class);
+            ${modelInfo.groupKey}commandLine.execute(${modelInfo.allArgsStr});
         }
         <#else>
         System.out.println("输入${modelInfo.groupName}配置:");
-        CommandLine commandLine = new CommandLine(${modelInfo.type}Command.class);
-        commandLine.execute(${modelInfo.allArgsStr});
+        CommandLine ${modelInfo.groupKey}commandLine = new CommandLine(${modelInfo.type}Command.class);
+        ${modelInfo.groupKey}commandLine.execute(${modelInfo.allArgsStr});
         </#if>
     </#if>
 </#list>
