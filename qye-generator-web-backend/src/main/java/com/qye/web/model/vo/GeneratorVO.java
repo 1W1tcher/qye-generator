@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * 帖子视图
+ * 生成器视图
  *
  * @author <a href="https://github.com/1W1tcher">qye</a>
  */

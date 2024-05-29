@@ -10,7 +10,7 @@ import com.qye.web.model.vo.GeneratorVO;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * 帖子服务
+ * 生成器服务
  *
  * @author <a href="https://github.com/1W1tcher">qye</a>
  */
@@ -34,7 +34,7 @@ public interface GeneratorService extends IService<Generator> {
 
 
     /**
-     * 获取帖子封装
+     * 获取生成器封装
      *
      * @param generator
      * @param request
@@ -43,7 +43,7 @@ public interface GeneratorService extends IService<Generator> {
     GeneratorVO getGeneratorVO(Generator generator, HttpServletRequest request);
 
     /**
-     * 分页获取帖子封装
+     * 分页获取生成器封装
      *
      * @param generatorPage
      * @param request
