@@ -1,7 +1,7 @@
 package com.qye.web.model.vo;
 
 import cn.hutool.json.JSONUtil;
-import com.qye.web.meta.Meta;
+import com.qye.maker.meta.Meta;
 import com.qye.web.model.entity.Generator;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;

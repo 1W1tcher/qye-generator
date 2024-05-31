@@ -1,6 +1,6 @@
 package com.qye.web.model.dto.generator;
 
-import com.qye.web.meta.Meta;
+import com.qye.maker.meta.Meta;
 import lombok.Data;
 
 import java.io.Serializable;
