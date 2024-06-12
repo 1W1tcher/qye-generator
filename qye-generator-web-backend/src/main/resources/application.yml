@@ -25,19 +25,18 @@ spring:
     username: root
     password: 12345678
   # Redis 配置
-  # todo 需替换配置，然后取消注释
-  #  redis:
-  #    database: 1
-  #    host: localhost
-  #    port: 6379
-  #    timeout: 5000
-  #    password: 123456
+  redis:
+    database: 1
+    host: localhost
+    port: 6379
+    timeout: 5000
 
   # 文件上传
   servlet:
     multipart:
       # 大小限制
-      max-file-size: 10MB
+      max-file-size: 100MB
+      max-request-size: 100MB
 server:
   address: 0.0.0.0
   port: 8121
@@ -47,6 +46,11 @@ server:
     session:
       cookie:
         max-age: 2592000
+  tomcat:
+    max-connections: 10000
+    threads:
+      max: 5000
+    accept-count: 1000
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
@@ -58,13 +62,13 @@ mybatis-plus:
       logic-not-delete-value: 0 # 逻辑未删除值（默认为 0）
 
 # 对象存储
-# todo 需替换配置
 cos:
   client:
-    accessKey: xxx
-    secretKey: xxx
-    region: xxx
-    bucket: xxx
+    accessKey: xxxxx
+    secretKey: xxxxx
+    region: xxxxx
+    bucket: xxxxx
+
 # 接口文档配置
 knife4j:
   enable: true
@@ -76,3 +80,23 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.qye.web.controller
+# xxl-job 配置
+xxl:
+  job:
+    admin:
+      # xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
+      addresses: http://127.0.0.1:8080/xxl-job-admin
+    # xxl-job, access token
+    accessToken: default_token
+    executor:
+      # xxl-job executor appname
+      appname: qye-generator-web-backend
+      # xxl-job executor registry-address: default use address to registry , otherwise use ip:port if address is null
+      address:
+      # xxl-job executor server-info
+      ip:
+      port: 9999
+      # xxl-job executor log-path
+      logpath: logs/jobhandler
+      # xxl-job executor log-retention-days
+      logretentiondays: 30
